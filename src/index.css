@@ -1,13 +1,610 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rosario:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300;400;500;600;700&display=swap');
+/* General style starts */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --color-title: #00A893;
+    --color-nav: #3E775F;
+    --color-btn: #3ACE91;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rosario', sans-serif;
+}
+
+.subBody {
+    overflow-x: hidden;
+}
+
+.nav .container .btn p {
+    background-color: #000;
+    padding: 8px 6px;
+    transition: .4s;
+}
+
+.nav .container .btn p:hover {
+    transform: scale(1.05);
+}
+
+/* .container button {
+    transition: .4s;
+} */
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    /* font-weight: 600; */
+    font-weight: bold;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* .dotBoxContainer {
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+}
+
+.dotBoxContainer .dotBox .dot{
+    height: 4px;
+    width: 4px;
+    margin: 8px 5px;
+    border-radius: 50px;
+    background-color: #000;
+} */
+
+/* General style ends */
+
+/* Navbar style starts */
+
+.fa-facebook-f {
+    color: blue;
+}
+
+.fa-twitter {
+    color: royalblue;
+}
+
+.fa-instagram {
+    color: #d62976;
+}
+
+.fullContainer.navbar {
+    background-color: #fff;
+}
+
+.fullContainer.navbar .upperContainer {
+    /* background-color: red; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fullContainer.navbar .upperContainer .ucSubCon {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.fullContainer.navbar .upperContainer .ucSubCon .logoo span {
+    /* background-color: orange; */
+    color: var(--color-title);
+}
+
+.fullContainer.navbar .upperContainer .ucSubCon .contacts {
+    /* background-color: royalblue; */
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fullContainer.navbar .upperContainer .ucSubCon .contacts .dtl ~ p {
+    /* background-color: #d62976; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.fullContainer.navbar .upperContainer .ucSubCon .contacts div p i.fa-phone{
+    color: green;
+}
+
+/* Navbar style ends */
+
+/* Nav style starts */
+
+.nav {
+    background-color: var(--color-nav);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav .container {
+    background-color: var(--color-nav);
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .container ul {
+    /* background-color: oldlace; */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav .container a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.nav .container .logo p {
+    background-color: #000;
+    padding: 8px 6px;
+}
+
+.nav .container ul .subNav {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.nav .container ul .subNav li {
+    margin-top: 20px;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: var(--color-nav);
+    width: 100%;
+    /* padding: 5px 0; */
+}
+
+.nav .container ul li a{
+    /* background-color: #d62976; */
+    margin: 0 10px;
+    padding: 10px 0px;
+}
+
+
+.nav .container ul li a:hover {
+    border-bottom: 1px solid #fff;
+    /* padding: 10px 0px; */
+    /* background-color: #d62976; */
+}
+
+.nav .container ul li:hover .subNav {
+    display: flex;
+}
+
+/* Nav style ends */
+
+/* Home style starts */
+
+.fullContainer.banner {
+    height: 750px;
+    background-image: url("./images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fullContainer.banner .container {
+    color: white;
+    padding: 200px 300px 0;
+}
+
+.fullContainer.banner .container h1 {
+    font-size: 70px;
+    width: 75%;
+}
+
+.fullContainer.banner .container p {
+    font-size: 28px;
+    width: 65%;
+    margin: 20px 0;
+}
+
+.fullContainer.banner .container button:nth-last-child(2) {
+    background-color: var(--color-btn);
+    margin-right: 10px;
+}
+
+.fullContainer.banner .container button:nth-last-child(1) {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-right: 5px;
+}
+
+/* Home style ends */
+
+/* About style starts */
+
+#aboutSection.fullContainer .container {
+    display: flex;
+    padding: 40px 20px;
+    height: 720px;
+}
+
+#aboutSection.fullContainer .container .rightContainer img {
+    height: 300px;
+}
+
+#aboutSection.fullContainer .container .rightContainer {
+    position: relative;
+    /* background-color: #d62976; */
+    width: 50%;
+}
+
+#aboutSection.fullContainer .container .rightContainer .rightSubContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aboutSection.fullContainer .container .rightContainer .rightSubContainer .imgBox {
+    flex: 50%;
+}
+
+#aboutSection.fullContainer .container .rightContainer .rightSubContainer .imgBox:nth-last-child(1) img,
+#aboutSection.fullContainer .container .rightContainer .rightSubContainer .imgBox:nth-last-child(2) img {
+    margin: 4px 90px 0 0;
+    height: 100%;
+    width: 97%;
+}
+
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer {
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+}
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer .dotBox .dot{
+    height: 4px;
+    width: 4px;
+    margin: 8px 5px;
+    border-radius: 50px;
+    background-color: #000;
+    /* z-index: -9; */
+}
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer1 {
+    position: absolute;
+    top: -19px;
+    right: -12px;
+    /* z-index: 99; */
+    display: flex;
+    justify-content: right;
+}
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer2 {
+    position: absolute;
+    top: 255px;
+    right: -20px;
+    /* z-index: 99; */
+    display: flex;
+    justify-content: right;
+}
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer3 {
+    display: flex;
+    flex-direction: row;
+    /* z-index: -1; */
+    position: absolute;
+    top: 240px;
+    left: -19px;
+}
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer4 {
+    display: flex;
+    flex-direction: row;
+    /* z-index: -1; */
+    position: absolute;
+    top: 590px;
+    left: -33px;
+}
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer5 {
+    position: absolute;
+    top: 600px;
+    right: -5px;
+    /* z-index: 99; */
+    display: flex;
+    justify-content: right;
+}
+
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer3 .dotBox .dot,
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer2 .dotBox .dot,
+#aboutSection.fullContainer .container .rightContainer .dotBoxContainer1 .dotBox .dot {
+    background-color: var(--color-btn);
+}
+
+#aboutSection.fullContainer .container .leftContainer {
+    /* background-color: gold; */
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 500px; */
+    /* height: 100%; */
+}
+
+#aboutSection.fullContainer .container .leftContainer p {
+    /* background-color: goldenrod; */
+    margin: 20px 0;
+}
+
+#aboutSection.fullContainer .container .leftContainer .detail .card {
+    background-color: #fff;
+    margin: 0 0 0 30px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .2);
+}
+
+#aboutSection.fullContainer .container .leftContainer .detail {
+    margin: 10px 0;
+}
+
+#aboutSection.fullContainer .container .leftContainer .detail .card p {
+    padding: 10px;
+}
+
+#aboutSection.fullContainer .container .leftContainer .detail h3 i {
+    color: var(--color-btn);
+    background-color: #000;
+    border-radius: 50px;
+}
+
+#aboutSection.fullContainer .container .leftContainer button {
+    background-color: var(--color-nav);
+    /* background-color: #000; */
+    /* margin-top: 150px; */
+    margin-top: 50px;
+    width: 50%;
+}
+
+#aboutSection.fullContainer .container .leftContainer .detail .card {
+    display: none;
+}
+
+#aboutSection.fullContainer .container .leftContainer .detail:hover .card {
+    display: block;
+    /* background-color: orange; */
+    margin-bottom: -10px;
+}
+
+/* About style ends */
+
+/* HowAbout style starts */
+
+.howAbout .container {
+    /* background-color: #d62976; */
+    /* background-color: rgba(58, 206, 145,.1); */
+    background: linear-gradient(to bottom, rgba(58, 206, 145,.1) 65.5%,#fff 34.5%);
+    padding: 10px 30px;
+    height: 680px;
+}
+
+.howAbout .container .upperContainer .para {
+    /* color: orange; */
+    margin: 15px 0;
+}
+
+.howAbout .container .prgBtn button {
+    background-color: var(--color-nav);
+    margin: 40px 0;
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer {
+    width: 80%;
+    margin: 30px auto;
+    z-index: 19;
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer .img:nth-child(1) .imgBox {
+    margin-top: -20px;
+    height: 200px;
+    background-image: url("./images/p1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: opacity(100%); */
+    /* transition: .4s; */
+}
+
+/* .howAbout .container .lowerContainer .lowerSubContainer .img:nth-child(1) .imgBox:hover {
+    filter: opacity(0);
+    cursor: pointer;
+} */
+
+
+.howAbout .container .lowerContainer .lowerSubContainer .img:nth-child(2) .imgBox {
+    margin-top: -20px;
+    height: 200px;
+    background-image: url("./images/p2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer .img:nth-child(3) .imgBox {
+    height: 200px;
+    background-image: url("./images/p3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer .img:nth-child(4) .imgBox {
+    height: 200px;
+    background-image: url("./images/p4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer .img {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 400px; */
+    /* width: 300px; */
+    padding: 0 0 10px 0;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer .img .title p,
+.howAbout .container .lowerContainer .lowerSubContainer .img .title h4 {
+    padding: 0 1px;
+    /* background-color: orange; */
+    margin: 10px 0;
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer .img .year {
+    color: var(--color-title);
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer .img .imgBox {
+    background-size: contain;
+    /* height: 700px; */
+    width: 100%;
+    /* background-size: 1000px; */
+    /* background-size: cover; */
+}
+
+.howAbout .container .lowerContainer .lowerSubContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.howAbout .container .lowerContainer {
+    position: relative;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -20px;
+    left: 94px;
+    z-index: -1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -36px;
+    left: 573px;
+    z-index: -1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -36px;
+    left: 842px;
+    z-index: -1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer3 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -25px;
+    left: 1111px;
+    z-index: -1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer4 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 258px;
+    left: 1123px;
+    z-index: 1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer5 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 258px;
+    left: 840px;
+    z-index: 1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer6 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 250px;
+    left: 520px;
+    z-index: 1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer7 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 258px;
+    left: 314px;
+    z-index: 1;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer .dotBox .dot{
+    height: 4px;
+    width: 4px;
+    margin: 8px 5px;
+    border-radius: 50px;
+    background-color: #000;
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer6 .dotBox .dot,
+.howAbout .container .lowerContainer .dotBoxContainer4 .dotBox .dot,
+.howAbout .container .lowerContainer .dotBoxContainer2 .dotBox .dot,
+.howAbout .container .lowerContainer .dotBoxContainer0 .dotBox .dot{
+    background-color: var(--color-nav);
+}
+
+.howAbout .container .lowerContainer .dotBoxContainer7 .dotBox .dot,
+.howAbout .container .lowerContainer .dotBoxContainer5 .dotBox .dot,
+.howAbout .container .lowerContainer .dotBoxContainer3 .dotBox .dot,
+.howAbout .container .lowerContainer .dotBoxContainer1 .dotBox .dot{
+    background-color: #000;
+}
+
+
+/* HowAbout style ends */
