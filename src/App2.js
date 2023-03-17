@@ -33,7 +33,7 @@ const App2 = () => {
                     }}
                 >
                     {/* <Marquee /> */}
-                    <NewsFeed />
+                    {/* <NewsFeed /> */}
                 </section>
             </div >
             <section className="fullContainer" id="aboutSection">

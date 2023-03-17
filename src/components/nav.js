@@ -8,13 +8,18 @@ const nav = () => {
     const onMouseOver1 = () => {
         document.getElementById('subNav1').style.display = 'flex'
     }
+    const onMouseOver2 = () => {
+        document.getElementById('subNav2').style.display = 'flex'
+    }
     const disappear = () => {
         document.getElementById('subNav').style.display = 'none'
         document.getElementById('subNav1').style.display = 'none'
+        document.getElementById('subNav2').style.display = 'none'
     }
     const disappear1 = () => {
         document.getElementById('subNav').style.display = 'none'
         document.getElementById('subNav1').style.display = 'none'
+        document.getElementById('subNav2').style.display = 'none'
         if (window.matchMedia("(max-width: 440px)").matches) {
             console.log('mobile version')
             document.getElementById('navbar').style.display = 'none'
@@ -79,9 +84,15 @@ const nav = () => {
                         <Link to={"/whatWeDo"}>What We Do</Link>
                         {/* <a href="/whatWeDo">What We Do</a> */}
                     </li>
-                    <li onClick={disappear1}>
-                        <Link to={"/pressRelease"}>Press Release</Link>
-                        {/* <a href="/pressRelease">Press Release</a> */}
+                    <li onMouseOver={onMouseOver2} onMouseOut={disappear}>
+                        {/* <Link to={"/pressRelease"}>Media</Link> */}
+                        <a href="#">Media</a>
+                        <ul className='subNav' id='subNav2'
+                        >
+                            <li onClick={disappear1}>
+                                <Link to={"/pressRelease"}>Press Release</Link>
+                            </li>
+                        </ul>
                     </li>
                     <li onClick={disappear1}>
                         <Link to={"/donationPage"}>Donate Us</Link>
