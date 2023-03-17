@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const footer = () => {
     return (
@@ -7,9 +8,15 @@ const footer = () => {
                 <div className="grid">
                     <h2>Delight Rwanda</h2>
                     <div className="sub">
-                        <i className="fa-brands fa-facebook-f"></i>
-                        <i className="fa-brands fa-twitter"></i>
-                        <i className="fa-brands fa-instagram"></i>
+                        <a href="https://www.facebook.com/delightrwanda">
+                            <i className="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com/DelightRwanda1">
+                            <i className="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/delight_rwanda">
+                            <i className="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
                 <div className="grid">
@@ -21,14 +28,14 @@ const footer = () => {
                     <h3>Main Menu</h3>
                     <div className="subGrid">
                         <div className="left">
-                            <p>Home</p>
-                            <p>About Us</p>
-                            <p>Our Programs</p>
+                            <a href='#homeSection'>Home</a>
+                            <a href='#aboutSection'>About Us</a>
+                            <a href='#programsSection'>Our Programs</a>
                         </div>
                         <div className="right">
-                            <p>Our Approaches</p>
-                            <p>Our Partners</p>
-                            <p>Contact Us</p>
+                            <a href='#approachSection'>Our Approaches</a>
+                            <a href='#partnerSection'>Our Partners</a>
+                            <a href='#contactUsSection'>Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -36,74 +43,15 @@ const footer = () => {
                     <h3>Donate</h3>
                     <p>Help Us Change The Lives</p>
                     <button>
-                        <a href="#makeAGiftSection">
-                            Donate Now
-                        </a>
+                        <Link to={"/donationPage"}>Donate Now</Link>
                     </button>
                 </div>
             </div>
-        </div>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', backgroundColor: '#3E775F' }}>
+                <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Developed by Ahmad Consultancy Pvt Ltd © 2023</p>
+            </div>
+        </div >
     )
 }
 
 export default footer
-
-
-// import React from 'react'
-
-// const footer = () => {
-//     return (
-//         <div>
-//             <div className="container">
-//                 <div className="newsLetterContainer">
-//                     <img src={require("../images/logo.png")} alt="" />
-//                     <p>
-//                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-//                         Autem perferendis aperiam quos laborum inventore magni pariatur?
-//                     </p>
-//                     <input type="text" placeholder='Enter your email id' />
-//                 </div>
-//                 {/* .newsLetterContainer */}
-
-//                 <div className="linkContainer">
-//                     <div className="title">Useful Links</div>
-//                     <ul>
-//                         <li>
-//                             <a href="#homeSection">Home</a>
-//                         </li>
-//                         <li>
-//                             <a href="#aboutSection">About Us</a>
-//                         </li>
-//                         <li>
-//                             <a href="#programsSection">Programs</a>
-//                         </li>
-//                         <li>
-//                             <a href="#educationSection">Education</a>
-//                         </li>
-//                         <li>
-//                             <a href="#gallerySection">Gallery</a>
-//                         </li>
-//                         <li>
-//                             <a href="#joinSection">Join Us</a>
-//                         </li>
-//                     </ul>
-//                 </div>
-//                 {/* .linksContainer */}
-//                 <div className="connectContainer">
-//                     <div className="title">
-//                         Connect with us
-//                     </div>
-//                     <p>
-//                         Garden West, Fawara Chowk, Karachi<br />
-//                         D-8, Memon Plaza
-//                     </p>
-//                     <p>info@ngo.com</p>
-//                     <p>(+92) 88884840979</p>
-//                 </div>
-//                 {/* .connectContainer */}
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default footer

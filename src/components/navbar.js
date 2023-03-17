@@ -8,7 +8,9 @@ const navbar = () => {
             <div className="upperContainer">
                 <div className="ucSubCon">
                     <div className="logoo">
-                        <h2>Delight <span>Rwanda</span></h2>
+                        <Link to={'/'}>
+                            <h2>Delight <span>Rwanda</span></h2>
+                        </Link>
                     </div>
                     <div className="contacts">
                         <div>
@@ -17,7 +19,9 @@ const navbar = () => {
                         </div>
                         <div>
                             <p className='dtl'><b>Follow Us</b></p>
-                            <p><span><i className="fa-brands fa-facebook-f"></i></span><span><i className="fa-brands fa-twitter"></i></span><span><i className="fa-brands fa-instagram"></i></span></p>
+                            <p><span><a href="https://www.facebook.com/delightrwanda"><i className="fa-brands fa-facebook-f"></i></a></span>
+                                <span><a href="https://www.twitter.com/DelightRwanda1"><i className="fa-brands fa-twitter"></i></a></span>
+                                <span><a href="https://www.instagram.com/delight_rwanda"><i className="fa-brands fa-instagram"></i></a></span></p>
                         </div>
                     </div>
                 </div>

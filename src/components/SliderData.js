@@ -1,0 +1,27 @@
+export const SliderData = [
+    {
+        image:
+            "https://upload.wikimedia.org/wikipedia/commons/e/e3/BritishCouncil_Logo.png"
+    }
+    ,
+    {
+        image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwn0Mxv_cx8BJwZQbqx2rVg3rBYgL7QsMYZv7C2O_TFiMeoSy1H8VeCcZCOm1fV7s-eY&usqp=CAU"
+    },
+    {
+        image:
+            "https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/274983047_263188745998314_3303182586237307709_n.png?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=zQt8NLSdSaYAX8dYYy-&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfDuHJENxGVhCtAOILPSdJCvPpOgJT8xxaJV9JLIHk4z8g&oe=64160069"
+    },
+    {
+        image:
+            "https://pbs.twimg.com/media/E9Xlk6nXEAAZYoA?format=jpg&name=large"
+    },
+    {
+        image:
+            'https://play-lh.googleusercontent.com/7lL7Pz4-m5Q5djkwJaqA_97Ifork6aCAH3eE6ktv_PSzAb32GrQ62SI-QnNE5lH_Pg=w240-h480-rw'
+    },
+    {
+        image:
+            'https://blueforcesigns.com/wp-content/uploads/2022/12/WhatsApp_Image_2022-11-28_at_2.11.47_PM-removebg-preview.png'
+    }
+];

@@ -16,7 +16,7 @@ const ourPrograms = () => {
                     </div>
                     <div className="cardRight">
                         <img src={require("../images/opdd1.png")} alt="" />
-                        <h3>Behavior Change Communication</h3>
+                        <h4>Behavior Change Communication</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -28,7 +28,7 @@ const ourPrograms = () => {
                     </div>
                     <div className="cardRight sec">
                         <img src={require("../images/opdd2.png")} alt="" />
-                        <h3>Women Economic Empowerment</h3>
+                        <h4>Women Economic Empowerment</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -40,7 +40,7 @@ const ourPrograms = () => {
                     </div>
                     <div className="cardRight sec">
                         <img src={require("../images/opdd3.png")} alt="" />
-                        <h3>Youth Capacity Building</h3>
+                        <h4>Youth Capacity Building</h4>
                     </div>
                 </div>
             </div>

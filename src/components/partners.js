@@ -7,9 +7,14 @@ const partners = () => {
                 <div className="upperContainer">
                     <h2>Our Partners & Donors</h2>
                     <div className="imgBox">
+                        {/* <div className="img"></div> */}
                         <div className="img"></div>
                         <div className="img"></div>
                         <div className="img"></div>
+                        <div className="img"></div>
+                        <div className="img"></div>
+                        <div className="img"></div>
+                        {/* <img src={require('../images/logo1.jpeg')} alt="" /> */}
                     </div>
                 </div>
                 <div className="lowerContainer">
@@ -35,7 +40,8 @@ const partners = () => {
                                 Delight Rwanda works with highly motivated individuals excited about transforming the world. Our internship program is designed to provide undergraduate students, graduate students, and recent graduates with a unique opportunity to develop both hard and soft skills in a friendly and hardworking environment.
                             </p>
                             <button>
-                                <a href="#makeAGiftSection">
+                                {/* <a href="#makeAGiftSection"> */}
+                                <a href="#donationPage">
                                     Make A Gift
                                 </a>
                             </button>

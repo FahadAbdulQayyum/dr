@@ -16,7 +16,7 @@ const whatWeDoDetail = () => {
                         </p>
                     </div>
                     <div className="cardRight">
-                        <img src={require("../images/wwd1.png")} alt="" />
+                        <img src={require("../images/replace3.png")} alt="" />
                     </div>
                 </div>
                 <div className="card">
@@ -64,7 +64,7 @@ const whatWeDoDetail = () => {
                 </div>
                 <div className="card">
                     <div className="cardLeft">
-                        <h3>Wiceceka Human Trafficking Prevention</h3>
+                        <h3>Wiceceka Human Trafficking</h3>
                         <p>
                             Human trafficking remains a global problem that makes people suffer physically and psychologically during and after transportation victims of human trafficking to other parts of the world. The government of Rwanda does not fully meet the minimum standards for the elimination of human trafficking but is making significant efforts to do so. The government demonstrated overall increasing efforts compared to the previous reporting period, considering the impact of the COVID-19 pandemic on its anti-trafficking capacity. Delight Rwanda increased the efforts of national awareness and prevention campaigns; and organized sustainable care shelters for human trafficking victims.<br />
                             The Wiceceka Project (Don’t keep quiet) has achieved its mission of alerting young people (girls and boys) at 98 high schools in Rwanda about the forms and faces of human trafficking. Delight Rwanda has set mechanisms towards reducing poverty and unemployment among the youths, improving girl protection and educating/informing the mass community through media channels, and preventing and reporting Human Trafficking cases to the prior authorities.

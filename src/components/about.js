@@ -1,13 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import NewsFeed from './newsFeed';
 
 const about = () => {
     return (
         <div>
+            {/* <section className='newFeed'>
+                <NewsFeed />
+            </section> */}
             <div className="container">
                 <div className="leftContainer">
                     <h2>Who We Are</h2>
                     <p>
-                        Delight Rwanda is a local nonprofit organization established in 2017 to
+                        Delight Rwanda is a nonprofit organization established in 2017 to
                         ameliorate contemporary social and development problems such as poverty, unemployment, and behavior change communication.
                     </p>
                     <div className="detail">
@@ -43,12 +48,16 @@ const about = () => {
                             </p>
                         </div>
                     </div>
-                    <button>Know How Are Making A Difference &nbsp;&nbsp;<i className="fa fa-long-arrow-right"></i></button>
+                    <Link to={'/whatWeDo'}>
+                        <button                    >
+                            Know How Are Making A Difference &nbsp;&nbsp;<i className="fa fa-long-arrow-right"></i>
+                        </button>
+                    </Link>
                 </div>
                 <div className="rightContainer">
                     <div className="rightSubContainer">
                         <div className="imgBox">
-                            <img src={require("../images/image10.png")} alt="" />
+                            <img src={require("../images/happy1.png")} alt="" />
                         </div>
                         <div className="imgBox">
                             <img src={require("../images/image\ 11.png")} alt="" />
