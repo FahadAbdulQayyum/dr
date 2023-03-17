@@ -3558,7 +3558,8 @@ width: 100%;
     }
 
     .programs .container .lowerContainer .imgBox {
-        height: 130vh;
+        /* height: 130vh; */
+        height: 120vh;
     }
 
     .carousel {
