@@ -3475,7 +3475,8 @@ width: 100%;
 
   @media screen and (max-width: 393px) {
     .programs .container .upperContainer .imgBox {
-        height: 105vh;
+        height: 110vh;
+        /* height: 105vh; */
     }
   }
 
