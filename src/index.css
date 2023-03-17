@@ -3551,15 +3551,15 @@ width: 100%;
     .programs .container .lowerContainer {
         /* height: 180vh; */
         /* height: 140vh; */
-        height: 135vh;
+        height: 145vh;
+        /* height: 135vh; */
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .programs .container .lowerContainer .imgBox {
-        /* height: 130vh; */
-        height: 120vh;
+        height: 130vh;
     }
 
     .carousel {
