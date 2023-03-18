@@ -3239,9 +3239,9 @@ width: 100%;
         line-height: 1px;
     }
     .programs .container .lowerContainer {
-        /* height: 140vh; */
-        height: 135vh;
-        min-height: 130vh;
+        height: 140vh;
+        /* height: 135vh; */
+        min-height: 135vh;
         /* height: 120vh; */
         display: flex;
         justify-content: center;
