@@ -3558,8 +3558,8 @@ width: 100%;
 
     .programs .container .lowerContainer {
         /* height: 180vh; */
-        /* height: 140vh; */
-        height: 145vh;
+        height: 150vh;
+        /* height: 145vh; */
         /* height: 135vh; */
         display: flex;
         justify-content: center;
@@ -3567,8 +3567,10 @@ width: 100%;
     }
 
     .programs .container .lowerContainer .imgBox {
-        height: 140vh;
-        min-height: 135vh;
+        /* height: 150vh; */
+        height: 127vh;
+        /* height: 130vh; */
+        min-height: 120vh;
     }
 
     .carousel {
