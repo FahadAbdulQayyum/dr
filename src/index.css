@@ -3610,10 +3610,12 @@ width: 100%;
 
   @media screen and (max-width: 360px) {
     .programs .container .upperContainer .imgBox {
-        height: 120vh;
+        max-height: 130vh;
+        height: 125vh;
+        min-height: 115px;
     }
     .programs .container .lowerContainer .imgBox {
-    height: 118vh;
+        height: 118vh;
     }
     h2.hd {
         text-align: center;
