@@ -2934,6 +2934,10 @@ p.deco {
 
   @media screen and (max-width: 435px) {
   /* @media screen and (max-width: 425px) { */
+    .pressReleaseSubNav a {
+        position: relative;
+        top: -70px;
+    }
     .donationPage .left .img:nth-child(7) img {
         height: 30vh;
     }
@@ -3562,7 +3566,8 @@ width: 100%;
     }
 
     .programs .container .lowerContainer .imgBox {
-        height: 130vh;
+        height: 140vh;
+        min-height: 135vh;
     }
 
     .carousel {

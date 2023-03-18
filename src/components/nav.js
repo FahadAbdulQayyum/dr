@@ -89,7 +89,7 @@ const nav = () => {
                         <a href="#">Media</a>
                         <ul className='subNav' id='subNav2'
                         >
-                            <li onClick={disappear1}>
+                            <li onClick={disappear1} className='pressReleaseSubNav'>
                                 <Link to={"/pressRelease"}>Press Release</Link>
                             </li>
                         </ul>
@@ -99,10 +99,10 @@ const nav = () => {
                         {/* <a href="#donationPage" onClick={goHome} >Donate Us</a> */}
                     </li>
                     <li onClick={disappear1}>
-                        <a href="#contactUsSection" onClick={goHome}>Contacts</a>
+                        <a href="#contactUsSection" onClick={goHome}>Contact Us</a>
                     </li>
                 </ul>
-            </nav>
+            </nav >
             <div className="logo btn">
                 <Link to="/form">
                     <p>
