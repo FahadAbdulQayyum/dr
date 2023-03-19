@@ -9,11 +9,12 @@ import Programs from './components/programs'
 import Partner from './components/partner'
 import MakeAGift from './components/makeAGift'
 import ContactUs from './components/contactUs'
+import ContactUs1 from './components/contactUs1'
 import NewsFeed from './components/newsFeed'
 import Marquee from './components/marquee';
 import DonationPoster from './components/donationPoster'
 import Footer from './components/footer'
-
+import SendEmailAuto from './components/sendEmailAuto'
 
 const App2 = () => {
     return (
@@ -53,6 +54,7 @@ const App2 = () => {
             </section>
             <section className="partner" id="partnerSection">
                 <Partner />
+                {/* <SendEmailAuto /> */}
             </section>
             {/* <section>
                 <DonationPoster />
@@ -61,7 +63,8 @@ const App2 = () => {
                 <MakeAGift />
             </section> */}
             <section className="contactUs" id="contactUsSection">
-                <ContactUs />
+                {/* <ContactUs /> */}
+                <ContactUs1 />
             </section>
             <footer className="footer" id="footerSection">
                 <Footer />
