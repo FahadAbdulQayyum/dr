@@ -31,7 +31,7 @@ const Partner = () => {
     };
     return (
         <div className='carousel'>
-            <h2 style={{ textAlign: 'center' }}>Partner and donor</h2>
+            <h2 style={{ textAlign: 'center' }}>Partner and Donor</h2>
             <Carousel
                 responsive={responsive}
                 infinite={true}
