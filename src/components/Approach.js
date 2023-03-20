@@ -191,7 +191,8 @@ const approach = () => {
                         </div>
                     </div>
                     <div className="img">
-                        <img src={require("../images/womengrass.jpg")} alt="" />
+                        <img src={require("../images/sc1.png")} alt="" />
+                        {/* <img src={require("../images/womengrass.jpg")} alt="" /> */}
                     </div>
                     <div className="img">
                         <img src={require("../images/womenholding.jpg")} alt="" />

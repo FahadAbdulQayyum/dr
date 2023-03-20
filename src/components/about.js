@@ -57,10 +57,12 @@ const about = () => {
                             <img src={require("../images/happy1.png")} alt="" />
                         </div>
                         <div className="imgBox">
-                            <img src={require("../images/image\ 11.png")} alt="" />
+                            {/* <img src={require("../images/image\ 11.png")} alt="" /> */}
+                            <img src={require("../images/human.jpeg")} alt="" />
                         </div>
                         <div className="imgBox imgBox3">
-                            <img src={require("../images/image\ 12.png")} alt="" />
+                            {/* <img src={require("../images/image\ 12.png")} alt="" /> */}
+                            <img src={require("../images/child.jpeg")} alt="" />
                         </div>
                     </div>
                     <div className="dotBoxContainer dotBoxContainer0">
