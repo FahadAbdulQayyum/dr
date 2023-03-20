@@ -50,7 +50,7 @@ const footer = () => {
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', backgroundColor: '#3E775F' }}>
                 <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Developed by Ahmad Consultancy Pvt Ltd © 2023</p>
             </div>
-        </div >
+        </div>
     )
 }
 

@@ -38,14 +38,12 @@ const nav = () => {
             >
                 <ul id='navbar'>
                     <li onClick={disappear1}>
-                        {/* <li> */}
                         <a href="/#homeSection">
                             Home
                         </a>
                     </li>
                     <li onMouseOver={onMouseOver} onMouseOut={disappear}>
                         <Link to={'/'}>About Us</Link>
-                        {/* <Link to={'/pressRelease'}></Link> */}
                         <ul className='subNav' id='subNav'
                         >
                             <li onClick={disappear1}>
@@ -82,21 +80,21 @@ const nav = () => {
                     </li>
                     <li onClick={disappear1}>
                         <Link to={"/whatWeDo"}>What We Do</Link>
-                        {/* <a href="/whatWeDo">What We Do</a> */}
                     </li>
                     <li onMouseOver={onMouseOver2} onMouseOut={disappear}>
-                        {/* <Link to={"/pressRelease"}>Media</Link> */}
                         <a href="#">Media</a>
                         <ul className='subNav' id='subNav2'
                         >
                             <li onClick={disappear1} className='pressReleaseSubNav'>
                                 <Link to={"/pressRelease"}>Press Release</Link>
                             </li>
+                            <li onClick={disappear1} className='pressReleaseSubNav'>
+                                <Link to={"/socialMedia"}>Gallery</Link>
+                            </li>
                         </ul>
                     </li>
                     <li onClick={disappear1}>
                         <Link to={"/donationPage"}>Donate Us</Link>
-                        {/* <a href="#donationPage" onClick={goHome} >Donate Us</a> */}
                     </li>
                     <li onClick={disappear1}>
                         <a href="#contactUsSection" onClick={goHome}>Contact Us</a>
@@ -110,7 +108,7 @@ const nav = () => {
                     </p>
                 </Link>
             </div>
-        </div >
+        </div>
     )
 }
 

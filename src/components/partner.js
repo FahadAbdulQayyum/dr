@@ -233,14 +233,3 @@ const Partner = () => {
 }
 
 export default Partner
-
-
-
-// import ImageSlider from './ImageSlider';
-// import { SliderData } from './SliderData';
-
-// function Partner() {
-//     return <ImageSlider slides={SliderData} />;
-// }
-
-// export default Partner;

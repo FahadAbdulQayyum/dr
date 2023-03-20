@@ -1,13 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NewsFeed from './newsFeed';
 
 const about = () => {
     return (
         <div>
-            {/* <section className='newFeed'>
-                <NewsFeed />
-            </section> */}
+
             <div className="container">
                 <div className="leftContainer">
                     <h2>Who We Are</h2>
@@ -290,7 +287,7 @@ const about = () => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

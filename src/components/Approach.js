@@ -192,11 +192,9 @@ const approach = () => {
                     </div>
                     <div className="img">
                         <img src={require("../images/womengrass.jpg")} alt="" />
-                        {/* <img src={require("../images/oa1.png")} alt="" /> */}
                     </div>
                     <div className="img">
                         <img src={require("../images/womenholding.jpg")} alt="" />
-                        {/* <img src={require("../images/oa2.png")} alt="" /> */}
                     </div>
                 </div>
                 <div className="rightContainer">

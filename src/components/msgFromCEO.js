@@ -5,7 +5,6 @@ const msgFromCEO = () => {
     return (
         <div className='msgFromCeo prg'>
             <div className="container">
-                {/* <h2>Message From CEO</h2> */}
                 <h2>Message From Chairman</h2>
                 <div className="card">
                     <div className="cardTop">
@@ -39,7 +38,7 @@ const msgFromCEO = () => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

@@ -48,7 +48,7 @@ const pressRelease = () => {
                 prevention campaigns; and organized sustainable care shelters for human trafficking victims.<br /><br />
                 For more information call us at(+250) 788 308 617 or <a href="mailto:@delightrwanda.org">email: eddie @delightrwanda.org</a>
             </p>
-        </div >
+        </div>
     )
 }
 

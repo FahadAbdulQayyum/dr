@@ -30,14 +30,8 @@ const home = () => {
             document.getElementById('cont').parentElement.parentElement.style.height = '105vh'
         }
         if (window.matchMedia("(max-width: 361px)").matches) {
-            // document.getElementById('cont').parentElement.querySelector('h1').style.color = 'red'
             document.getElementById('cont').parentElement.querySelector('h1').style.fontSize = '25px'
-            // document.getElementById('cont').querySelector('h1').style.fontSize = '15px'
-            // document.getElementById('cont').parentElement.parentElement.style.height = '110vh'
         }
-
-        // console.log('dcont', dcont);
-        // document.getElementsByClassName(dcont);
     }
 
     return (

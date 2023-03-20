@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import WhatWeDoDetail from './whatWeDoDetail'
 
 const whatAbout = () => {
     return (
@@ -16,7 +15,6 @@ const whatAbout = () => {
                     <div className="img">
                         <div className="subImg">
                             <img src={require("../images/blackhand.png")} alt="" />
-                            {/* <img src={require("../images/e1.png")} alt="" /> */}
                             <Link to={'/whatWeDo'}>
                                 <button>
                                     Read More
@@ -38,7 +36,6 @@ const whatAbout = () => {
                     </div>
                     <div className="img">
                         <div className="subImg">
-                            {/* <img src={require("../images/e3.png")} alt="" /> */}
                             <img src={require("../images/incubation.jpg")} alt="" />
                             <Link to={'/whatWeDo'}>
                                 <button>

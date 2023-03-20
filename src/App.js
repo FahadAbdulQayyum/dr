@@ -8,20 +8,15 @@ import OurTeam from './components/ourTeam';
 import MsgFromCEO from './components/msgFromCEO';
 import AnnualReports from './components/annualReports';
 import StopHT from './components/stopHT';
-import Form from './components/form';
-import Form1 from './components/form1';
 import Form2 from './components/form2';
 import MakeAGift1 from './components/makeAGift1';
-import Rough from './components/rough';
 import PressRelease from './components/pressRelease';
 import DonationPage from './components/donationPage';
 import SocialMedia from './components/socialMedia';
 import NotFound from './components/notFound';
-import SendEmailAuto from './components/sendEmailAuto';
 import App2 from './App2'
 
 import Navbar from './components/navbar';
-import Home from './components/home';
 import Nav from './components/nav'
 
 const App = () => {
@@ -41,17 +36,13 @@ const App = () => {
           <Route path="/ourPrograms" element={<OurPrograms />} />
           <Route path="/ourTeam" element={<OurTeam />} />
           <Route path="/msgFromCEO" element={<MsgFromCEO />} />
-          <Route path="/getInvolved" element={<Form />} />
           <Route path="/form" element={<Form2 />} />
-          {/* <Route path="/form2" element={<Form2 />} /> */}
           <Route path="/annualReports" element={<AnnualReports />} />
           <Route path="/stopHT" element={<StopHT />} />
           <Route path="/makeAGift1" element={<MakeAGift1 />} />
-          <Route path="/rough" element={<Rough />} />
           <Route path="/pressRelease" element={<PressRelease />} />
           <Route path="/socialMedia" element={<SocialMedia />} />
           <Route path='/donationPage' element={<DonationPage />} />
-          <Route path='/sendEmailAuto' element={<SendEmailAuto />} />
           < Route path='/*' element={<NotFound />} />
         </Routes>
       </Router>
