@@ -70,6 +70,17 @@ const whatAbout = () => {
                             <h3>Wiceceka Human Trafficking Prevention</h3>
                         </div>
                     </div>
+                    <div className="img">
+                        <div className="subImg">
+                            <img src={require("../images/child1.png")} alt="" />
+                            <Link to={'/whatWeDo'}>
+                                <button>
+                                    Read More
+                                </button>
+                            </Link>
+                            <h3>End Violence Against Children</h3>
+                        </div>
+                    </div>
                 </div>
                 <div className="leftContainer edBtn">
                     <Link to="/whatWeDo">
