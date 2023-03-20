@@ -2958,7 +2958,8 @@ p.deco {
         justify-content: center;
         align-items: center;
         width: 80%;
-        height: 110vh;
+        height: 115vh;
+        /* height: 110vh; */
     }
     .programs .container .lowerContainer .imgBox .img {
         display: flex;
