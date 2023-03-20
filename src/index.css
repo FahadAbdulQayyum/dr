@@ -950,11 +950,11 @@ input[type=submit] {
 }
 
 .programs .container .upperContainer .imgBox .img:nth-child(1) {
-    background-image: url("./images/op1.png");
+    background-image: url("../src/images/opddd1.png");
 }
 
 .programs .container .upperContainer .imgBox .img:nth-child(2) {
-    background-image: url("./images/op2.png");
+    background-image: url("../src/images/opddd2.png");
 }
 
 .programs .container .upperContainer .imgBox .img:nth-child(3) {

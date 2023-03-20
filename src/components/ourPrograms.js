@@ -15,6 +15,7 @@ const ourPrograms = () => {
                     </div>
                     <div className="cardRight">
                         <img src={require("../images/opdd1.png")} alt="" />
+                        {/* <img src={require("../images/opddd1.png")} alt="" /> */}
                         <h4>Behavior Change Communication</h4>
                     </div>
                 </div>
@@ -27,6 +28,7 @@ const ourPrograms = () => {
                     </div>
                     <div className="cardRight sec">
                         <img src={require("../images/opdd2.png")} alt="" />
+                        {/* <img src={require("../images/opddd2.png")} alt="" /> */}
                         <h4>Women Economic Empowerment</h4>
                     </div>
                 </div>
