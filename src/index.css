@@ -2222,6 +2222,82 @@ p.deco {
 
 /* whatWeDo section restyled ends */
 
+/* newsLetter section style starts */
+
+.newsletter .container {
+    display: flex;
+    padding: 30px 50px;
+}
+.newsletter .container .left {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--rwanda-blue);
+    color: #fff;
+    padding: 0 30px;
+    width: 25%;
+    margin-right: 10px;
+}
+.newsletter .container .left h3 {
+    text-align: center;
+}
+.newsletter .container .right p ,
+.newsletter .container .left p {
+    text-align: justify;
+}
+
+.newsletter .container .right {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .container .right h1 {
+    margin: 10px 0;
+}
+
+
+.newsletter .container .right .title {
+    font-size: 2rem;
+    border: 3px solid orange;
+    border-radius: 5px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.newsletter .container .right .title p {
+    font-size: 1.3rem;
+    position: absolute;
+    top: -45px;
+    right: -5px;
+    background-color: white;
+    padding: 10px;
+}
+
+.newsletter .container .right .card {
+    display: flex;
+    flex-direction: row;
+}
+
+.newsletter .container .right .card .rightCard p {
+    margin-left: 20px;
+    text-align: justify;
+
+}
+
+.newsletter .container .right.down .card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* newsLetter section style ends */
+
   /* Responsiveness style starts */
 
 @media screen and (max-width: 1440px) {
@@ -2320,6 +2396,15 @@ p.deco {
     }
     .annualReports .rightContainer img {
         position: unset !important;
+    }
+    .newsletter .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter .container .right,
+    .newsletter .container .left {
+        width: 100%;
+        margin: 20px 0;
     }
 
   }
@@ -2696,6 +2781,35 @@ p.deco {
         width: 93%;
         text-align: justify;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .newsletter .container {
+        padding: 15px;
+    }
+    .newsletter .container .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .newsletter .container .right.down img {
+        height: 250px;
+    }
+
+    .newsletter .container .right h1 {
+        font-size: 2rem;
+    }
+    .newsletter .container .right p {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        width: 90%; 
+        margin-left: 20px;    
+    }
+    /* .newsletter .container .right .leftCard img {
+        height: 200px;
+    } */
 }
 
   @media screen and (max-width: 435px) {

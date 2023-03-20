@@ -91,6 +91,9 @@ const nav = () => {
                             <li onClick={disappear1} className='pressReleaseSubNav'>
                                 <Link to={"/socialMedia"}>Gallery</Link>
                             </li>
+                            <li onClick={disappear1} className='pressReleaseSubNav'>
+                                <Link to={"/newsLetter"}>News Letters</Link>
+                            </li>
                         </ul>
                     </li>
                     <li onClick={disappear1}>

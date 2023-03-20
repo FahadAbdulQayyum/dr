@@ -13,6 +13,7 @@ import MakeAGift1 from './components/makeAGift1';
 import PressRelease from './components/pressRelease';
 import DonationPage from './components/donationPage';
 import SocialMedia from './components/socialMedia';
+import NewsLetter from './components/newsLetter';
 import NotFound from './components/notFound';
 import App2 from './App2'
 
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/makeAGift1" element={<MakeAGift1 />} />
           <Route path="/pressRelease" element={<PressRelease />} />
           <Route path="/socialMedia" element={<SocialMedia />} />
+          <Route path="/newsLetter" element={<NewsLetter />} />
           <Route path='/donationPage' element={<DonationPage />} />
           < Route path='/*' element={<NotFound />} />
         </Routes>
