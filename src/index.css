@@ -163,14 +163,38 @@ input[type=submit] {
 
 .fa-facebook-f {
     color: blue;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 50px;
+    line-height: 10px;
+    margin: 0 1px;
 }
 
 .fa-twitter {
     color: royalblue;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 50px;
+    /* line-height: 10px; */
+    margin: 0 1px;
 }
 
 .fa-instagram {
     color: #d62976;
+    border: 1px solid;
+    padding: 5px 6px;
+    border-radius: 50px;
+    /* line-height: 15px; */
+    margin: 0 1px;
+}
+
+.fa-youtube {
+    color: red;
+    border: 1px solid;
+    padding: 3px 5px;
+    border-radius: 50px;
+    line-height: 21px;
+    margin: 0 1px;
 }
 
 .fullContainer.navbar {
@@ -2821,6 +2845,10 @@ p.deco {
     /* .newsletter .container .right .leftCard img {
         height: 200px;
     } */
+    .newsletter .container .right .title p {
+        padding: 2px;
+        margin: 25px 20px 0 0;
+    }
 }
 
   @media screen and (max-width: 435px) {
