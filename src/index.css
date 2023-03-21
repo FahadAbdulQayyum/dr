@@ -2791,10 +2791,10 @@ p.deco {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
+        margin: 30px auto;
     }
     .newsletter .container .right.down img {
-        height: 250px;
+        height: 230px;
     }
 
     .newsletter .container .right h1 {
@@ -2806,6 +2806,17 @@ p.deco {
        justify-content: center;
         width: 90%; 
         margin-left: 20px;    
+    }
+    .newsletter .container .right .card  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .newsletter .container .right .card .leftCard {
+        display: flex;
+        flex-direction: column;
     }
     /* .newsletter .container .right .leftCard img {
         height: 200px;
