@@ -161,6 +161,13 @@ input[type=submit] {
 
 /* Navbar style starts */
 
+/* .fa-brands {
+    background-color: lightgray;
+    background-color: rgba(0, 0, 0, .04);
+    filter: blur(.4px);
+    backdrop-filter: blur(10px);
+} */
+
 .fa-facebook-f {
     color: blue;
     border: 1px solid;
@@ -3172,7 +3179,8 @@ p.deco {
         justify-content: center;
         align-items: center;
         width: 80%;
-        height: 115vh;
+        /* height: 115vh; */
+        height: 125vh;
         /* height: 110vh; */
     }
     .programs .container .lowerContainer .imgBox .img {
