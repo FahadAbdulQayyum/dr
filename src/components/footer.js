@@ -48,9 +48,9 @@ const footer = () => {
                 </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', backgroundColor: '#3E775F' }}>
-                <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Developed by Ahmad Consultancy Pvt Ltd © 2023</p>
+                <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><a href='www.ahmadconsultancy.com' target={'_blank'} style={{ textDecoration: 'none', color: '#fff' }}>Developed by M.A.Ahmad Co. Ltd</a><span style={{ fontSize: '30px', marginBottom: '-15px' }}> &nbsp;&#174;&nbsp; </span> 2022 - 2023</p>
             </div>
-        </div>
+        </div >
     )
 }
 
