@@ -3319,6 +3319,11 @@ p.deco {
         justify-content: center;
     }
     
+    footer .container ~ div p {
+        display: flex;
+        flex-direction: column;
+    }
+
     .whatWeDo .container .card {
         padding: 10px;
     }

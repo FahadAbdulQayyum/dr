@@ -50,7 +50,7 @@ const footer = () => {
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', backgroundColor: '#3E775F' }}>
                 <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Designed and Developed by &nbsp;<a href='https://www.ahmadconsultancy.com' target={'_blank'} style={{ textDecoration: 'none', color: '#fff' }}>M.A.Ahmad Co. Ltd</a><span style={{ fontSize: '30px', marginBottom: '-15px' }}> &nbsp;&#174;&nbsp; </span> 2022 - 2023</p>
             </div>
-        </div >
+        </div>
     )
 }
 
