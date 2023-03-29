@@ -2203,10 +2203,44 @@ footer{
 
 /* socialMedia section starts */
 
-.socialMedia .img {
+.socialMedia {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.socialMedia .img {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;   */
+
+    display: flex;
+    flex-wrap: nowrap;
+    /*  height: 1200px;
+    width: 1200px; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.socialMedia .img span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 700px; */
+    /* height: 700px; */
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+.socialMedia .img img {
+    height: 70%;
+    width: 50%;
 }
 
 h2.hd,
@@ -2348,6 +2382,23 @@ p.deco {
         }
         .programs .container .lowerContainer {
             height: 75vh;
+        }
+        .socialMedia .img {
+            display: flex;
+            flex-direction: column;
+        }
+        /* .socialMedia .img span  {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+        } */
+        .socialMedia .img span img{
+            height: 70%;
+            width: 70%;
+        }
+        .socialMedia .img ~ img {
+            height: 80%;
+            width: 80%;
         }
     }
   @media screen and (max-width: 1122px) {
@@ -3395,6 +3446,14 @@ p.deco {
     }
     .annualReports h1 {
         font-size: 1.4rem;
+    }
+
+    .socialMedia .img span img{
+        height: 50% !important;
+        width: 50% !important;
+    }
+    .socialMedia .img span small {
+        width: 300px !important;
     }
   }
 
