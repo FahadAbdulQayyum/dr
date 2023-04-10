@@ -1,4 +1,5 @@
 import React from 'react'
+import App from '../App'
 import { Link } from 'react-router-dom'
 
 const msgFromCEO = () => {
@@ -38,6 +39,7 @@ const msgFromCEO = () => {
                     </div>
                 </div>
             </div>
+            <App />
         </div>
     )
 }

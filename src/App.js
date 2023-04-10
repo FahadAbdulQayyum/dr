@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/socialMedia" element={<SocialMedia />} />
           <Route path="/newsLetter" element={<NewsLetter />} />
           <Route path='/donationPage' element={<DonationPage />} />
-          < Route path='/*' element={<NotFound />} />
+          <Route path='/*' element={<NotFound />} />
         </Routes>
       </Router>
     </div>
