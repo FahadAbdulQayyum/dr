@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const msgFromCEO = () => {
     return (
         <div className='msgFromCeo prg'>
+            <App />
             <div className="container">
                 <h2>Message From Chairman</h2>
                 <div className="card">
@@ -39,7 +40,6 @@ const msgFromCEO = () => {
                     </div>
                 </div>
             </div>
-            <App />
         </div>
     )
 }
