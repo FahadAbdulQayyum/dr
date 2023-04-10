@@ -3,6 +3,11 @@ import App from '../App'
 import { Link } from 'react-router-dom'
 
 const msgFromCEO = () => {
+
+    const msg = () => <App />
+
+    msg();
+
     return (
         <div className='msgFromCeo prg'>
             <div className="container">
